@@ -1,0 +1,82 @@
+/* Base styles for the Snake App */
+.snake-app {
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #cccc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styles */
+.snake-app h1 {
+  font-size: 50px;
+  font-family: neon;
+  color: #3c152a;
+}
+
+.snake-app h2 {
+  font-size: 25px;
+}
+
+/* Snake Board styles */
+.snake-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(241, 199, 218);
+  position: relative;
+}
+
+/* Snake Segment and Apple styles */
+.snake-segment,
+.apple {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.snake-segment {
+  background-color: #23770c;
+}
+
+.apple {
+  background-color: rgba(255, 0, 0, 0.827);
+}
+
+/* Button styles */
+#btn1,
+#btnStart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #c1c2da;
+  margin: auto;
+  z-index: 1;
+}
+
+#btn1:active,
+#btnStart:active {
+  background-color: rgb(235, 146, 208);
+}
+
+/* Container styles */
+#container {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .snake-app {
+    background-color: #fff;
+  }
+}
